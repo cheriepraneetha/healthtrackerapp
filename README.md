@@ -2,25 +2,16 @@ ABSTRACT
 
 A health tracker application using Streamlit is developed providing an extensive interface to record and track personal health information, such as steps made, heart rate, calorie consumption, and sleep time. The data analysis will help the application seek anomalies in a user's overall health pattern so that they can make choices accordingly to enhance their health. Users of this application are able to visualize their health through interactive dashboards indicating improvement levels day by day.
 
-The application securely stores user and health logs information in Amazon DynamoDB. In addition, the application creates detailed PDF reports on key health metrics and risks; this project explores how the integration of technology will make the user understand his health, avoid risks, and adopt a healthier lifestyle. The health tracker is a very strong solution for people with a vision to have more proactive, informed approaches to their own welfare.
 
 
 1.	INTRODUCTION
 The wearable health devices and smartwatches, due to the excessive use that is occurring, are allowing users to track better their activities around health, from steps taken and heartbeats and calories burned, to how much they sleep. However, such raw data yield more but lacks profound analysis and actionable insights. Users have all these pieces of information without having any tool to interpret potential health risks or even get a personalized recommendation.
 
-It was this gap that motivated us to create a web app not only collecting health data but also analyzing it for anomalies and providing recommendations to the user. In addition, existing health trackers are mostly lacking the capability of aggregating data into something meaningful and sharable in a report format. This application addresses these challenges by offering an interface through which users may log their health data, be warned of any anomalies that have been detected, and print PDF reports for an overall overview of health over time.
-
+=
 This project is relevant because it can make health tracking more accessible and insightful for people looking to maintain or improve their well-being. The integration with AWS DynamoDB and cloud services assured security and scalability concerning the critical user data. Its extent goes far beyond simple data tracking to include advanced health monitoring and reporting - an area of functionality that currently exists in a wide open space within the marketplace for health apps.
 
-2.	OBJECTIVES
-Objective 1: To create an intuitive health tracker app using Streamlit that allows users to log their daily health metrics, including step count, heart rate, calories burned, and sleep duration.
 
-Objective 2: To implement an anomaly detection system that identifies irregularities in user health data and provides personalized recommendations for maintaining or improving health.
-
-Objective 3: To develop a PDF report generation feature that summarizes user health data, highlights potential risks, and securely stores this information using AWS DynamoDB.
-
-
-3. METHODOLOGY
+2. METHODOLOGY
 
 The development of the health tracker app was carried out in several distinct phases, using a combination of modern web development frameworks, data storage techniques, and cloud services. The approach involved designing the app’s user interface, implementing health data logging, conducting anomaly detection, and integrating PDF reporting and cloud services.
 
@@ -51,24 +42,7 @@ When a user logged a heart rate of 95 bpm during a low-activity period, the app 
 
 Implications:
 The project demonstrated how digital health apps can empower users to actively monitor their health and take preventive actions based on real-time insights. The anomaly detection system encouraged users to address potential health risks early, while the comprehensive reports provided valuable feedback for ongoing health improvement. However, limitations included the simplicity of the anomaly detection logic and the need for broader smartwatch integration. These could be areas for future development, such as incorporating machine learning models for more advanced health predictions.
-5. CONCLUSION
 
-Major Outcomes:
-•	Successful Implementation: The Streamlit-based health tracker app was developed with key features like user account management, health data logging, anomaly detection, and data visualization.
-•	Effective Analysis: The app effectively detects anomalies and provides personalized health insights, enhancing user decision-making.
-Achievements:
-•	Comprehensive Tracking: Users can monitor various health metrics and receive detailed PDF reports.
-•	Seamless Integration: Utilizes AWS DynamoDB for data storage and Google Cloud for historical data management.
-Limitations:
-•	Data Privacy: Continuous attention needed for safeguarding sensitive health information.
-•	Data Accuracy: The quality of recommendations depends on accurate input data.
-•	Scope: The app's analysis is limited to specific metrics and could be expanded.
-Future Directions:
-•	Expand Metrics: Integrate additional health data and advanced analytics.
-•	Improve User Feedback: Gather user feedback to refine features and functionality.
-•	Broaden Integration: Explore connections with other health platforms for a more integrated experience.
-
-By addressing these recommendations, the health tracker app can continue to evolve and provide greater value to its users, enhancing its impact on personal health management.
 
 6.REFERENCES
 
