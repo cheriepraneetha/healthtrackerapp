@@ -1,0 +1,14 @@
+streamlit
+pandas
+numpy
+matplotlib
+seaborn
+passlib
+boto3
+pandas
+altair
+streamlit
+scikit-learn
+seaborn
+fpdf
+reportlab
