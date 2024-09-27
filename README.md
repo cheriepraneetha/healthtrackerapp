@@ -5,6 +5,7 @@ A health tracker application using Streamlit is developed providing an extensive
 
 
 1.	INTRODUCTION
+   
 The wearable health devices and smartwatches, due to the excessive use that is occurring, are allowing users to track better their activities around health, from steps taken and heartbeats and calories burned, to how much they sleep. However, such raw data yield more but lacks profound analysis and actionable insights. Users have all these pieces of information without having any tool to interpret potential health risks or even get a personalized recommendation.
 
 =
