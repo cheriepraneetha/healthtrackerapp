@@ -1,63 +1,51 @@
-ABSTRACT
+# Health Tracker App
+A simple Python application to track and manage your health metrics including diet, exercise, and overall wellness.
 
-A health tracker application using Streamlit is developed providing an extensive interface to record and track personal health information, such as steps made, heart rate, calorie consumption, and sleep time. The data analysis will help the application seek anomalies in a user's overall health pattern so that they can make choices accordingly to enhance their health. Users of this application are able to visualize their health through interactive dashboards indicating improvement levels day by day.
+## Overview
+The Health Tracker App allows users to monitor their daily health activities, record vital statistics, and track progress over time.  
+It provides an easy-to-use interface to maintain records and helps users make informed decisions about their health.
 
+---
 
+## Features
+- Track daily exercise and workouts  
+- Record meals and calorie intake  
+- Monitor weight and BMI  
+- Generate simple reports for progress tracking  
+- User-friendly interface  
 
-1.	INTRODUCTION
-   
-The wearable health devices and smartwatches, due to the excessive use that is occurring, are allowing users to track better their activities around health, from steps taken and heartbeats and calories burned, to how much they sleep. However, such raw data yield more but lacks profound analysis and actionable insights. Users have all these pieces of information without having any tool to interpret potential health risks or even get a personalized recommendation.
+---
 
-=
-This project is relevant because it can make health tracking more accessible and insightful for people looking to maintain or improve their well-being. The integration with AWS DynamoDB and cloud services assured security and scalability concerning the critical user data. Its extent goes far beyond simple data tracking to include advanced health monitoring and reporting - an area of functionality that currently exists in a wide open space within the marketplace for health apps.
+## Tech Stack
+- Python  
+- Streamlit (for interactive UI)  
+- SQLite (for local storage)  
+- Pandas (for data management)  
 
+---
 
-2. METHODOLOGY
+## Installation & Setup
 
-The development of the health tracker app was carried out in several distinct phases, using a combination of modern web development frameworks, data storage techniques, and cloud services. The approach involved designing the app’s user interface, implementing health data logging, conducting anomaly detection, and integrating PDF reporting and cloud services.
+1.Clone the repository
 
-App Development and UI Design:
-The app was built using Streamlit, an open-source framework that allows for the rapid creation of web applications in Python. Streamlit was chosen for its simplicity and ability to display health data in an interactive and visually appealing format. The user interface was designed to allow users to easily log their daily health data, view their progress, and access personalized health reports.
-
-Data Logging and Analysis:
-Users can manually log health metrics such as step count, heart rate, calories burned, and sleep duration, or sync data from smartwatches. The data is then processed, and any anomalies—such as unusually high or low heart rates, insufficient sleep, or irregular step counts—are detected. Health recommendations are generated based on predefined thresholds and health risk parameters for each metric.
-
-Cloud Integration for Data Storage:
-The app utilizes AWS DynamoDB for secure storage of user data. DynamoDB was selected due to its scalability and ease of integration with Python, allowing the app to store large volumes of user data efficiently. Additionally, Google Cloud services were integrated to store and analyze historical health data, enabling the app to track users’ long-term health trends and generate comprehensive reports.
-
-Anomaly Detection and Recommendations:
-The anomaly detection system was built using simple logic-based algorithms. The app analyzes the user’s logged data against risk factors such as step count, heart rate, calories burned, and sleep duration. When anomalies are detected, personalized recommendations are provided to help users improve their health habits or take preventive actions.
-4. RESULTS AND DISCUSSION
-
-The health tracker app successfully achieved its key objectives of data logging, anomaly detection, and personalized report generation. Below are the key findings and their implications in relation to the project’s objectives:
-
-Health Data Logging:
-Users were able to log daily health metrics, including step count, heart rate, calories burned, and sleep duration. Data entry was either manual or synced through smartwatches. The system effectively captured and stored this information, which aligned with the first objective of providing a smooth and accurate health-tracking process.
-Data Example:
-A test user logged 8,000 steps, 75 bpm heart rate, 2,200 calories burned, and 7 hours of sleep. The app consistently logged and stored this data for future reference.
-
-Anomaly Detection:
-The anomaly detection system worked by analyzing the user’s logged data and comparing it to predefined thresholds. For instance, an abnormal spike in heart rate or a significant drop in step count was flagged as a potential health risk. The app then generated personalized recommendations based on these anomalies, successfully meeting the second objective.
-Data Example:
-When a user logged a heart rate of 95 bpm during a low-activity period, the app flagged it as an anomaly and suggested further monitoring. Similarly, inadequate sleep (less than 5 hours) triggered recommendations to improve sleep habits.
-
-Implications:
-The project demonstrated how digital health apps can empower users to actively monitor their health and take preventive actions based on real-time insights. The anomaly detection system encouraged users to address potential health risks early, while the comprehensive reports provided valuable feedback for ongoing health improvement. However, limitations included the simplicity of the anomaly detection logic and the need for broader smartwatch integration. These could be areas for future development, such as incorporating machine learning models for more advanced health predictions.
+git clone https://github.com/cheriepraneetha/healthtrackerapp.git
 
 
-6.REFERENCES
+cd healthtrackerapp
 
-1. Books:
-•	O'Reilly, T., & Stroustrup, B. (2020). Programming Python. O'Reilly Media.
-•	McKinney, W. (2022). Python for data analysis: Data wrangling with pandas, numpy, and ipython. O'Reilly Media.
-2.Papers:
-•	Zhang, Y., Liu, Q., & Wang, L. (2022). Advances in machine learning for health monitoring systems. Health Information Science and Systems, 10(1), 15-27. https://doi.org/10.1186/s13755-022-00761-6
-•	Alghamdi, M., & O’Neil, M. (2022). Leveraging machine learning for health monitoring systems. Vine Journal of Information and Knowledge Management Systems. https://doi.org/10.1002/VIW.20220027
-3.Online Sources:
-•	Streamlit. (n.d.). Streamlit documentation. Retrieved September 15, 2024, from https://docs.streamlit.io/
-•	Amazon Web Services (AWS). (n.d.). Amazon DynamoDB documentation. Retrieved September 15, 2024, from https://docs.aws.amazon.com/dynamodb/
-•	Google Cloud. (n.d.). Google Cloud database documentation. Retrieved September 15, 2024, from https://cloud.google.com/docs
-4. Libraries:
-•	FPDF. (n.d.). FPDF documentation. Retrieved September 15, 2024, from https://pyfpdf.readthedocs.io/
-•	ReportLab. (n.d.). ReportLab user guide. Retrieved September 15, 2024, from https://www.reportlab.com/docs/reportlab-userguide.pdf
+
+
+2.Install dependencies
+
+pip install -r requirements.txt
+
+
+
+
+3.Run the app
+
+
+streamlit run main.py
+
+
 
